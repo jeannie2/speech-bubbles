@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <title>Speech Bubbles</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Londrina+Outline&display=swap"
+    rel="stylesheet"
+  />
+  <head>
+    <style>
+      * {
+      margin: 0px;
+      padding: 0px;
+      }
+
+      body {
+        background-color: black;
+      }
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scaleX(-1) rotate(10deg);
+        z-index: -1;
+        width: 25%;
+        height: 25%;
+      }
+
+      h1 {
+        position: absolute;
+        top: 50%;
+        left: 49.5%;
+        transform: translate(-49.5%, -50%) rotate(-9deg);
+        font-family: "impact";
+        color: white;
+        font-size: 2.5vw;
+        font-family: "Bangers", cursive;
+      }
+    </style>
+  </head>
+
+  <body>
+    <img src="src/bubble.svg"></img>
+    <h1>SAY WHAT?</h1> 
+    
+    <script>
+      console.log("wth");
+      document.addEventListener("click", navigate);
+
+      function navigate() {
+        //  window.location.href = "speechbubbles.html";
+      }
+    </script>
+  </body>
+</html>
