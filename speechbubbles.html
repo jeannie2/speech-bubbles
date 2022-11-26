@@ -71,7 +71,7 @@
         let listening;
         let noError;
         let visibleDelay = 0; // don't declare inside loadFont(strawberry) or runs all at same time (for both cases: if var visibleDelay = 2000 is inside function; and visibleDelay = 2000 is inside function (with var outside))
-        let hiddenDelay = 1800;
+        let hiddenDelay = 1600;
 
         function randomRGB() {
           let r = Math.floor(Math.random() * 256);
@@ -360,6 +360,7 @@
 <!--Reference: 
 -https://codepen.io/akobashikawa/pen/rZRrQN // random google font
 -https://stackoverflow.com/questions/21507133/how-do-you-get-exactly-50-odds // if (Math.random() >= 0.5) {
+-https://en.wikipedia.org/wiki/File:Speech_bubble.svg
 
 -I have the same experience as Ron Harlev: non-lagging results are best achieved by setting recognition.continuous = false and restarting the recognition when the onend event occurs. – https://stackoverflow.com/a/25414548/10436361
 -instead of using onspeechend use onend to continue listening - https://stackoverflow.com/a/56188911/10436361
